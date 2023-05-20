@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">MarksTracker</string>
+
+    <string name="welcome">Bienvenid@ a Marks Tracker!</string>
+
+    <string name="goToAddMarkButtonText">Añadir</string>
+    <string name="checkMarksButtonText">Comprobar notas</string>
+    <string name="deleteAllMarksButtonText">Borrar todas las notas</string>
+
+    <string name="addMarkTitle">Añadir Nota</string>
+    <string name="subject">Asignatura</string>
+    <string name="mark">Nota</string>
+    <string name="updatedMark">Nota actualizada</string>
+    <string name="addButtonText">Añadir</string>
+
+    <string name="markAddedToast">Nota añadida satisfactoriamente</string>
+    <string name="markUpdatedToast">Nota actualizada satisfactoriamente</string>
+    <string name="markDeletedToast">Nota borrada satisfactoriamente</string>
+    <string name="allMarksDeletedToast">Todas las notas borradas satisfactoriamente</string>
+    <string name="markAlreadyExistsToast">Ya existe una nota para esta asignatura, puedes cambiarla en el menú "Comprobar notas"</string>
+    <string name="wrongMark">Por favor, introduce un número entre 0 y 10 y con un máximo de dos decimales</string>
+
+    <string name="emptyList">No hay ninguna nota</string>
+
+    <string name="changeMarkButtonText">Actualizar</string>
+    <string name="deleteMarkButtonText">Borrar</string>
+
+    <string name="newMarkText">Nueva nota</string>
+    <string name="deleteMarkText">Borrar nota</string>
+    <string name="deleteAllMarksText">Borrar todas las notas</string>
+    <string name="deleteMarkQuestionText">¿Estás segur@ de que quieres borrar esta nota?</string>
+    <string name="deleteAllMarksQuestionText">¿Estás segur@ de que quieres borrar todas las notas?</string>
+    <string name="yes">Sí</string>
+    <string name="no">No</string>
+
+    <string name="accept">Aceptar</string>
+    <string name="cancel">Cancelar</string>
+</resources>

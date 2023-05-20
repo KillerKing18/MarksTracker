@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">MarksTracker</string>
+
+    <string name="welcome">Welcome to Marks Tracker!</string>
+
+    <string name="goToAddMarkButtonText">Add mark</string>
+    <string name="checkMarksButtonText">Check marks</string>
+    <string name="deleteAllMarksButtonText">Delete all marks</string>
+
+    <string name="addMarkTitle">Add Mark</string>
+    <string name="subject">Subject name</string>
+    <string name="mark">Mark</string>
+    <string name="updatedMark">Updated mark</string>
+    <string name="addButtonText">Add</string>
+
+    <string name="markAddedToast">Mark added successfully</string>
+    <string name="markUpdatedToast">Mark updated successfully</string>
+    <string name="markDeletedToast">Mark deleted successfully</string>
+    <string name="allMarksDeletedToast">All marks deleted successfully</string>
+    <string name="markAlreadyExistsToast">A mark for this subject already exists, change it in the "Check marks" menu</string>
+    <string name="wrongMark">Please, enter a number between 0 and 10 and with up to 2 decimal numbers</string>
+
+    <string name="emptyList">There are no marks</string>
+
+    <string name="changeMarkButtonText">Change</string>
+    <string name="deleteMarkButtonText">Delete</string>
+
+    <string name="newMarkText">New mark</string>
+    <string name="deleteMarkText">Delete mark</string>
+    <string name="deleteAllMarksText">Delete all marks</string>
+    <string name="deleteMarkQuestionText">Are you sure you want to delete this mark?</string>
+    <string name="deleteAllMarksQuestionText">Are you sure you want to delete all marks?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="accept">Accept</string>
+    <string name="cancel">Cancel</string>
+</resources>
