@@ -18,6 +18,7 @@
     <string name="markDeletedToast">Mark deleted successfully</string>
     <string name="allMarksDeletedToast">All marks deleted successfully</string>
     <string name="markAlreadyExistsToast">A mark for this subject already exists, change it in the "Check marks" menu</string>
+    <string name="markIsEmptyToast">You must enter a subject name and a mark</string>
     <string name="wrongMark">Please, enter a number between 0 and 10 and with up to 2 decimal numbers</string>
 
     <string name="emptyList">There are no marks</string>

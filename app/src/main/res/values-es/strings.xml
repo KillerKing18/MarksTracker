@@ -18,6 +18,7 @@
     <string name="markDeletedToast">Nota borrada satisfactoriamente</string>
     <string name="allMarksDeletedToast">Todas las notas borradas satisfactoriamente</string>
     <string name="markAlreadyExistsToast">Ya existe una nota para esta asignatura, puedes cambiarla en el menú "Comprobar notas"</string>
+    <string name="markIsEmptyToast">Debes introducir el nombre de la asignatura y una nota</string>
     <string name="wrongMark">Por favor, introduce un número entre 0 y 10 y con un máximo de dos decimales</string>
 
     <string name="emptyList">No hay ninguna nota</string>

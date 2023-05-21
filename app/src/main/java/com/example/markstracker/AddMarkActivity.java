@@ -36,20 +36,20 @@ public class AddMarkActivity extends AppCompatActivity {
         Button buttonAddMark = (Button) findViewById(R.id.addButton);
         buttonAddMark.setOnClickListener(view -> {
             String subjectText = ((EditText) findViewById(R.id.subjectNameEditText)).getText().toString();
-            float mark = Float.parseFloat(((EditText) findViewById(R.id.markEditText)).getText().toString());
+            String mark = ((EditText) findViewById(R.id.markEditText)).getText().toString();
 
             if (validateMark(subjectText, mark)) {
                 db = mdbh.getWritableDatabase();
                 if (db != null)
                 {
-                    mdbh.insertMark(db, subjectText, mark);
+                    mdbh.insertMark(db, subjectText, Float.parseFloat(mark));
                     db.close();
 
                     Toast.makeText(this, R.string.markAddedToast, Toast.LENGTH_LONG).show();
                     
                     Intent intent = new Intent(getApplicationContext(), SubjectActivity.class);
                     intent.putExtra("subjectName", subjectText);
-                    intent.putExtra("mark", StringUtils.decimalFormat(mark));
+                    intent.putExtra("mark", StringUtils.decimalFormat(Float.parseFloat(mark)));
                     startActivity(intent);
                     finish();
                 }
@@ -57,15 +57,20 @@ public class AddMarkActivity extends AppCompatActivity {
         });
     }
 
-    private boolean validateMark(String subject, float mark) {
+    private boolean validateMark(String subject, String mark) {
+        if (subject.isEmpty() || mark.isEmpty()) {
+            Toast.makeText(this, R.string.markIsEmptyToast, Toast.LENGTH_LONG).show();
+            return false;
+        }
         db = mdbh.getReadableDatabase();
         if (mdbh.checkSubjectExists(db, subject)) {
             Toast.makeText(this, R.string.markAlreadyExistsToast, Toast.LENGTH_LONG).show();
             db.close();
             return false;
         }
+        float markFloat = Float.parseFloat(mark);
         // We check if the mark introduced is between 0 and 10 and has a correct format
-        if (mark < 0.00 || mark > 10.00 || (Float.toString(mark).split("\\.").length == 2 && Float.toString(mark).split("\\.")[1].length() > 2)) {
+        if (markFloat < 0.00 || markFloat > 10.00 || (mark.split("\\.").length == 2 && mark.split("\\.")[1].length() > 2)) {
             Toast.makeText(this, R.string.wrongMark, Toast.LENGTH_LONG).show();
             return false;
         }
